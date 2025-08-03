@@ -20,7 +20,7 @@ async function checkWeather(city) {
 
         // Set weather icon based on weather condition
         if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "C:\\Users\\vinay\\OneDrive\\Desktop\\whether\\clouds.png"; // Replace with actual URL
+            weatherIcon.src = "clouds.png"; 
             document.querySelector(".weather").className = "weather weather-clouds"; // Set class for cloudy
         } else if (data.weather[0].main == "Clear") {
             weatherIcon.src = "C:\\Users\\vinay\\OneDrive\\Desktop\\whether\\clear.png"; // Replace with actual URL
