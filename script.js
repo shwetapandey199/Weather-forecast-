@@ -23,17 +23,17 @@ async function checkWeather(city) {
             weatherIcon.src = "clouds.png"; 
             document.querySelector(".weather").className = "weather weather-clouds"; // Set class for cloudy
         } else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "C:\\Users\\vinay\\OneDrive\\Desktop\\whether\\clear.png"; // Replace with actual URL
-            document.querySelector(".weather").className = "weather weather-clear"; // Set class for clear
+            weatherIcon.src = "clear.png"; 
+            document.querySelector(".weather").className = "weather weather-clear"; 
         } else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "C:\\Users\\vinay\\OneDrive\\Desktop\\whether\\rain.png"; // Replace with actual URL
-            document.querySelector(".weather").className = "weather weather-rain"; // Set class for rain
+            weatherIcon.src = "rain.png"; // Replace with actual URL
+            document.querySelector(".weather").className = "weather weather-rain";
         } else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "C:\\Users\\vinay\\OneDrive\\Desktop\\whether\\drizzle.png"; // Replace with actual URL
+            weatherIcon.src = "drizzle.png"; // Replace with actual URL
             document.querySelector(".weather").className = "weather weather-drizzle"; // Set class for drizzle
         } else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "C:\\Users\\vinay\\OneDrive\\Desktop\\whether\\mist.png"; // Replace with actual URL
-            document.querySelector(".weather").className = "weather weather-mist"; // Set class for mist
+            weatherIcon.src = "mist.png"; // Replace with actual URL
+            document.querySelector(".weather").className = "weather weather-mist";
         }
 
         document.querySelector(".weather").style.display = "block";
